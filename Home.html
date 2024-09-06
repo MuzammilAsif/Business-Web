@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="/assets/style/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script></head>
+<body>
+<header class="navbar">
+    <div class="left"></div>
+    <div class="right">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+<section id="hero-section">
+    <div class="container">
+        <h1 class="main-head">Providing You The Quality Of Work, Innovative Designs, </h1>
+        <div class="links">
+            <button><a href="#contact" class="btn btn-primary">Contact Me</a></button>
+            <button><a href="#Projects" class="btn btn-primary">Our Projects</a></button>
+        </div>
+    </div>
+</section>
+
+<div class="custom-shape-divider-bottom-1725297618">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+</div>
+
+<div class="heading">
+    <h1>Services</h1>
+    <hr class="underline">
+</div>
+
+<section id="services">
+    <div class="card">
+        <h1 class="card-head">Web Development</h1>
+        <div class="card-body">
+            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada, dui ut commodo consectetur, est velit pellentesque neque, at interdum ligula velit ac velit. Donec vel bibendum lectus, sed laoreet felis. Sed viverra, velit vel consectetur semper, ligula mauris pulvinar velit, ut commodo justo ex vel diam.</p>
+        </div>
+    </div>
+    <div class="card">
+        <h1 class="card-head">Video Editing</h1>
+        <div class="card-body">
+            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada, dui ut commodo consectetur, est velit pellentesque neque, at interdum ligula velit ac velit. Donec vel bibendum lectus, sed laoreet felis. Sed viverra, velit vel consectetur semper, ligula mauris pulvinar velit, ut commodo justo ex vel diam.</p>
+        </div>
+    </div>
+    <div class="card">
+        <h1 class="card-head"s>Graphic Designing</h1>
+        <div class="card-body">
+            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada, dui ut commodo consectetur, est velit pellentesque neque, at interdum ligula velit ac velit. Donec vel bibendum lectus, sed laoreet felis. Sed viverra, velit vel consectetur semper, ligula mauris pulvinar velit, ut commodo justo ex vel diam.</p>
+        </div>
+    </div>
+    <div class="card">
+        <h1 class="card-head">Digital Marketing</h1>
+        <div class="card-body">
+            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada, dui ut commodo consectetur, est velit pellentesque neque, at interdum ligula velit ac velit. Donec vel bibendum lectus, sed laoreet felis. Sed viverra, velit vel consectetur semper, ligula mauris pulvinar velit, ut commodo justo ex vel diam.</p>
+        </div>
+    </div>
+</section>
+
+<div class="heading">
+    <h1>Our Projects</h1>
+    <hr class="underline">
+</div>
+
+<section id="Projects">
+<div class="grid">
+    <div class="box box1">
+        <h1>Web Development</h1>
+    </div>
+    <div class="box box2">
+        <h1>Video Editing</h1>
+    </div>
+    <div class="box box3">
+        <h1>Graphic Designing</h1>
+    </div>
+    <div class="box box4">
+        <h1>Digital Marketing</h1>
+    </div>
+</div>
+</section>
+
+<div class="heading" >
+    <h1>Contact Us</h1>
+    <hr class="underline">
+</div>
+
+<section id="contact">
+    <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"  required></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</section>
+<script>
+    
+    const WebDevelop = document.querySelector('.box1');
+    const videoEditing = document.querySelector('.box2');
+    const graphicDesign = document.querySelector('.box3');
+    const digitalMark = document.querySelector('.box4');
+
+    WebDevelop.addEventListener('click',()=>{
+        window.location.href='/WebDevelop.html';
+    })
+    videoEditing.addEventListener('click',()=>{
+        window.location.href='/videoedit.html';
+    })
+    graphicDesign.addEventListener('click',()=>{
+        window.location.href='/graphic.html';
+    })
+    digitalMark.addEventListener('click',()=>{
+        window.location.href='/digital.html';
+    })
+
+</script>
+</body>
+</html>
